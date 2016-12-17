@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.one">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".Until3"
+        android:allowBackup="true"
+        android:icon="@mipmap/p_108"
+        android:label="每日看文"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main3Activity">
+        </activity>
+
+        <service
+            android:name=".SaveService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".RefreshActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".HeadChangeActivity"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog.FixedSize" />
+        <activity android:name=".PersonalActivity" />
+        <activity android:name=".ChangePassActivity" />
+        <activity android:name=".HistoryPerActivity"></activity>
+    </application>
+
+</manifest>

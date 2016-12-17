@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:divider="@drawable/divider"
+    android:showDividers="middle">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.example.one.MyImage
+            android:id="@+id/ivTitle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"/>
+
+        <com.example.one.MyTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content" />
+        <com.example.one.MyImage
+            android:visibility="gone"
+            android:id="@+id/miDeal"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/ic_cancel_black_24dp"
+            android:layout_gravity="bottom" />
+        <com.example.one.MyImage
+            android:id="@+id/miCollect"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/ic_star_border_black_24dp"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+    <Space
+        android:background="#7b7878"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></Space>
+</LinearLayout>
